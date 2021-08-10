@@ -1,0 +1,2 @@
+*{font-family:"Franklin Gothic Medium","Arial Narrow",Arial,sans-serif}body{font-size:1.5rem}input{color:grey;font-size:1rem;width:20%}.card-grid{display:grid;grid-gap:2em;gap:2em;grid-template-columns:repeat(12,1fr);overflow:hidden}.card{grid-column-end:span 4;padding:10px}.card,h4{text-align:center}h4{padding:5px}.card-grid>.card>img{border-radius:4%;width:15rem;height:20rem}h3{font-size:50px;text-align:center;font-family:"Trebuchet MS","Lucida Sans Unicode","Lucida Grande","Lucida Sans",Arial,sans-serif}
+/*# sourceMappingURL=main.dfa736ae.chunk.css.map */
