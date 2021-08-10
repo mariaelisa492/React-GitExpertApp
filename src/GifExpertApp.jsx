@@ -15,7 +15,7 @@ export const GitExpertApp = () => {
         <AddCategory setCategories={setCategories}/>
         <hr />
         
-        <ol>
+        <div>
             {
                 categories.map(category => (
                     <GifGrid 
@@ -24,7 +24,7 @@ export const GitExpertApp = () => {
                     />
                 ))
             }
-        </ol>
+        </div>
     </>
     )
 }

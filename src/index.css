@@ -3,7 +3,7 @@
 }
 
 body{
-    padding: 20px 0px 1px 60px;
+    
     font-size: 1.5rem;
 }
 
@@ -22,17 +22,18 @@ input{
 
 .card{
     grid-column-end: span 4;
-    padding:0.5em;
+    padding:10px;
+    text-align: center;
 }
 
-p{
+h4{
     padding: 5px;
     text-align: center;
 }
 
 .card-grid > .card > img{
     border-radius: 4%;
-    width: 25rem;
+    width: 15rem;
     height: 20rem;
 } 
 
