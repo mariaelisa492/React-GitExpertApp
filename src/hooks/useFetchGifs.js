@@ -1,4 +1,4 @@
-//esto es un hook inicia con use el nombre - es una funcion
+//esto es un hook inicia con "use" el nombre -> es una funcion
 
 import { useEffect, useState } from "react"
 import { getGifs } from "../helpers/getGifs";
@@ -12,7 +12,7 @@ export const useFetchGifs = (category) =>{
     useEffect(()=>{               //se hace el efecto para que solo cambie cuando cambie la categoria
         getGifs(category)         //hace la peticion http
         .then(gifs =>{          
-                setstate({             //ponemos timeout intencional
+                setstate({             //ponemos timeout intencional(lo quitamos ya)
                     data: gifs,
                     loading: false
                 })

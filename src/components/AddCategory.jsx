@@ -6,11 +6,13 @@ export const AddCategory = ({setCategories}) => {
     const [inputValue, setInputValue] = useState('');
 
     const handleInputChange = (e)=>{
-        setInputValue(e.target.value)                     //obtengo todo lo que entra en el input
+        setInputValue(e.target.value)         
+              //obtengo todo lo que entra en el input
     }
 
     const handleSubmit = (e) =>{
         e.preventDefault();         //previene que se recargue la pagina con el submit(recibe el evento del enter)
+        console.log('handleSubmit')
             if (inputValue.trim().length > 2){
                 setCategories(cats => [inputValue, ...cats,]);
                 setInputValue('');
@@ -18,7 +20,8 @@ export const AddCategory = ({setCategories}) => {
     }
 
     return (
-        <form onSubmit={handleSubmit}>           
+        <form onSubmit={handleSubmit}>  
+        <p>{inputValue}</p>         
             <input
             type="text"
             placeholder='Buscar'
@@ -27,10 +30,9 @@ export const AddCategory = ({setCategories}) => {
             />
         </form>
     )
-
 }
 
 
-AddCategory.propTypes = {
+AddCategory.propTypes = {    //debe ser obligatorio mandar una function
     setCategories: PropTypes.func.isRequired
 }

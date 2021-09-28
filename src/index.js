@@ -6,7 +6,7 @@ import './index.css';
 
 ReactDOM.render(
   // <React.StrictMode>                // React lo pone por defecto para ser mas estricto. 
-    <GitExpertApp />,
+    <GitExpertApp />,  // este seria el app principal
   // </React.StrictMode>,
   document.getElementById('root')
 );

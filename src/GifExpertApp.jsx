@@ -11,14 +11,14 @@ export const GitExpertApp = () => {
     
     return (
     <>
-        <h2>GitExpertApp</h2>
+        <h2>GitExpertApp MariaElisa</h2>
         <AddCategory setCategories={setCategories}/>
         <hr />
         
         <div>
             {
                 categories.map(category => (
-                    <GifGrid 
+                    <GifGrid               //recibe las categorigas y hace la peticion http con fetch
                     key = {category}
                     category = {category}
                     />

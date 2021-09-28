@@ -4,8 +4,8 @@ import { GifGridItem } from './GifGridItem';
 
 
 export const GifGrid = ({category}) => {
-    const {data: images, loading} = useFetchGifs(category);
-
+    const {data: images, loading} = useFetchGifs(category);  //desestructuramos el objeto del useFetch
+//renombro data como images
     return (
         <>
         <h3 className='card animate__animated animate__flipInY animate__delay-1s'>{category}</h3>
